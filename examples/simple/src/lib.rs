@@ -26,7 +26,7 @@ pub enum DataKey {
 pub struct FlashLoanReceiverContract;
 
 fn compute_fee(amount: &i128) -> i128 {
-    amount / 1250 // 0.05%, still TBD
+    100 * amount / 1250 // 0.05%, still TBD
 }
 
 #[contractimpl]
